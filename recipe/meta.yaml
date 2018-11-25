@@ -14,9 +14,9 @@ source:
   sha256: f6a920469bc7707ca258e44a7ea1c9bfbd68ab154ce8a1ed22974869a4815e85
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -49,8 +49,7 @@ about:
     rejection region test (Gabriel, et al, 2018, <DOI:10.1002/sim.7579>), an unconditional
     exact test for the situation where the controls are all expected to fail.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
