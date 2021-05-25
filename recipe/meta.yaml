@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: exact2x2_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/exact2x2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/exact2x2/exact2x2_{{ version }}.tar.gz
@@ -40,7 +39,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=exact2x2
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Calculates conditional exact tests (Fisher's exact test, Blaker's exact test, or  exact McNemar's test) and unconditional exact tests (including score-based tests on differences in proportions, ratios of proportions, and odds ratios, and Boshcloo's test) with appropriate matching confidence intervals, and provides
     power and sample size calculations. Gives melded confidence intervals for the binomial case. Gives boundary-optimized rejection region test (Gabriel, et al, 2018, <DOI:10.1002/sim.7579>), an unconditional exact test for the situation where the controls are all expected to fail.
   license_family: GPL3
@@ -49,9 +48,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
