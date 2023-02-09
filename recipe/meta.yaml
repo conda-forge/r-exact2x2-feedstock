@@ -1,4 +1,4 @@
-{% set version = "1.6.6" %}
+{% set version = "1.6.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/exact2x2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/exact2x2/exact2x2_{{ version }}.tar.gz
-  sha256: e3e04fb5461544b1bb2b1c5e079efbe81e9ac9e1e39f4bfd872fdafd05d5f4b0
+  sha256: 9717933a5baa86b242e1a611860f984f660c089c7b3f765fe14ca582a07b98f1
 
 build:
   noarch: generic
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
