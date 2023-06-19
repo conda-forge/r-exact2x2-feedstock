@@ -1,11 +1,11 @@
-About r-exact2x2
-================
+About r-exact2x2-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-exact2x2-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=exact2x2
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-exact2x2-feedstock/blob/main/LICENSE.txt)
 
 Summary: Calculates conditional exact tests (Fisher's exact test, Blaker's exact test, or  exact McNemar's test) and unconditional exact tests (including score-based tests on differences in proportions, ratios of proportions, and odds ratios, and Boshcloo's test) with appropriate matching confidence intervals, and provides power and sample size calculations. Gives melded confidence intervals for the binomial case. Gives boundary-optimized rejection region test (Gabriel, et al, 2018, <DOI:10.1002/sim.7579>), an unconditional exact test for the situation where the controls are all expected to fail.
 
